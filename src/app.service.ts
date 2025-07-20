@@ -1,15 +1,15 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs/common'
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Welcome to Finple API - Financial management for couples!';
-  }
+	getHello(): string {
+		return 'Welcome to Finple API - Financial management for couples!'
+	}
 
-  getHealth(): { status: string; timestamp: string } {
-    return {
-      status: 'ok',
-      timestamp: new Date().toISOString(),
-    };
-  }
+	getHealth(): { status: string; timestamp: string } {
+		return {
+			status: 'ok',
+			timestamp: new Date().toISOString(),
+		}
+	}
 }
