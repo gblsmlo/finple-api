@@ -1,3 +1,4 @@
+import { ValidationPipe } from '@nestjs/common'
 import { NestFactory } from '@nestjs/core'
 import { AppModule } from './app.module'
 
@@ -9,6 +10,7 @@ async function bootstrap() {
 		credentials: true,
 	})
 
+	app.useGlobalPipes(new ValidationPipe())
 	app.setGlobalPrefix('api')
 
 	const port = process.env.PORT || 3001
