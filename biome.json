@@ -1,3 +1,10 @@
 {
-	"extends": ["@tc96/biome-config"]
+	"extends": ["@tc96/biome-config"],
+	"linter": {
+		"rules": {
+			"style": {
+				"useImportType": "off"
+			}
+		}
+	}
 }
