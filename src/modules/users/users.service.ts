@@ -1,8 +1,10 @@
-import { DEFAULT_CATEGORIES } from '@/modules/auth/constants/default-categories'
-import { UsersRepository } from '@/shared/database/repositories/users.repositories'
-import { ConflictException, Injectable } from '@nestjs/common'
-import { hash } from 'bcrypt'
-import { SignupDto } from '../auth/dto/signup.dto'
+import { Injectable } from '@nestjs/common'
 
 @Injectable()
-export class UsersService {}
+export class UsersService {
+	getUserById(userId: string) {
+		return {
+			userId,
+		}
+	}
+}
